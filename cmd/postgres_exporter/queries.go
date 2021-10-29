@@ -29,6 +29,7 @@ type UserQuery struct {
 	Master       bool      `yaml:"master"`        // Querying only for master database
 	CacheSeconds uint64    `yaml:"cache_seconds"` // Number of seconds to cache the namespace result metrics for.
 	RunOnServer  string    `yaml:"runonserver"`   // Querying to run on which server version
+	Description  string    `yaml:"description"`   // Optional query-level description of metrics group. Not displayed.
 }
 
 // UserQueries represents a set of UserQuery objects
